@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-               python -m py_compile app.py form.py
+               sh 'python -m py_compile app.py'
             }
         }
     }
